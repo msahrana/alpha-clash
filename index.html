@@ -79,29 +79,31 @@
           <button class="btn bg-[#894189FF] text-white rounded-full border-none hover:bg-red-600">
             Life
             <img class="" src="./images/heart.png" alt="" />
-            <span>1</span>
+            <span id="current-life">10</span>
           </button>
-          <button class="btn bg-[#360490FF] text-white rounded-full border-none hover:bg-red-600">
+          <button class="btn bg-[#360490FF] text-white rounded-full border-none hover:bg-green-600">
             Score
             <img src="./images/score.png" alt="" />
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </div>
     </section>
-    <!-- score section -->
-    <section id="score" class="flex justify-center items-center min-h-screen hidden">
+    <!-- result section -->
+    <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
       <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+        <h1 class="text-3xl">Game Over!</h1>
         <h1 class="text-8xl">
-          <span class="font-extrabold">Score:</span> <span>14</span>
+          <span class="font-extrabold">Score:</span>
+          <span id="last-score">0</span>
         </h1>
-        <button class="btn">Play Again</button>
+        <button onclick="play()" class="btn">Play Again</button>
         <p>Practice will make you Pro</p>
       </div>
     </section>
   </main>
   <script src="scripts/utility.js"></script>
-  <script src="scripts/index.js"></script>
+  <script src="scripts/alpha-clash.js"></script>
 </body>
 
 </html>
